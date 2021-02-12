@@ -112,13 +112,12 @@
         <div id="timeline" class="container" v-if="page == 'timeline'">
             <h1>TIMELINE</h1>
 
-            <div id="timeline-content">
+            <div id="timeline-content" v-for="post in posts">
                 <article>
-                    <p>Aprendendo Vue.js
-                    </p>
+                    <p>{{ post.text }}</p>
                     <span>
                         <input type="checkbox" id="like" value="">
-                        <label for="like" id="likeButton"><i class="fa fa-heart"></i></label>
+                        <label for="like" id="likeButton" :class="{ liked: post.liked }" @click="toggleLike(post)"><i class="fa fa-heart"></i></label>
                     </span>
                 </article>
             </div>

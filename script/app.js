@@ -1,7 +1,7 @@
 var app = new Vue({
     el: '#app',
     data: {
-        page: 'projects',
+        page: 'home',
         seen: false,
         instagramUrl: 'https://www.instagram.com/mascarenhassamuuel18',
         gmailUrl: 'mailto:santossamuelplus@gmail.com?subject=Olá, Samuel! Vim pelo site!',
@@ -38,12 +38,20 @@ var app = new Vue({
                 codeUrl: 'https://github.com/Santos-Samuels/Boletim-Edicao-Especial',
                 demoUrl: 'https://boletim-edicao-especial-j59opzxaj.vercel.app/'
             }
+        ],
+
+        posts: [
+            { text: 'Aprendendo Vue.js', liked: false },
+            { text: 'teste', liked: true }
         ]
     },
 
     methods: {
         showMenu() {
             this.seen = !this.seen
+        },
+        toggleLike(post) {
+            post.liked = !post.liked
         }
     }
 })
