@@ -1,0 +1,73 @@
+#projects {
+    background-image: url(../images/background-5.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: fixed;
+}
+
+#projects h1{
+    padding: 2rem;
+    color: var(--color-secondary);
+    font-size: 2rem;
+}
+
+#projects #projectsDiv {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+#projectsDiv article {
+    background: var(--color-primary);
+    margin: 1rem 3rem;
+    border-radius: 5px;
+
+    box-shadow: 2px 2px 5px var(--color-background-box);
+}
+
+#projectsDiv article h2 {
+    background: var(--color-background-header);
+    color: var(--color-primary);
+    border-radius: 5px 5px 0 0;
+    padding: 0.3rem;
+    text-align: center;
+}
+
+#projectsDiv article div {
+    padding: 1rem;
+    text-align: center;
+}
+
+#projectsDiv article span {
+    color: var(--coolor-span);
+    font-weight: 600;
+}
+
+#projectsDiv article p {
+    font-size: 1.3rem;
+}
+
+#projectsDiv article .button {
+    margin-bottom: 1rem;
+}
+
+#projectsDiv article a {
+    text-decoration: none;
+    background: darkcyan;
+    padding: 0.5rem;
+}
+
+#projectsDiv article a {
+    text-decoration: none;
+    background: var(--coolor-span);
+    color: var(--color-primary);
+    font-weight: 600;
+    margin: 0 0.5rem;
+    padding: 0.7rem 1.5rem;
+
+    border-radius: 20px;
+}
+
+#projectsDiv article #demo {
+    background-color: var(--color-secondary);
+}

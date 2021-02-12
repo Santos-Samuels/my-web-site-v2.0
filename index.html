@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+
+    <link rel="stylesheet" href="style/index.css">
+    <link rel="stylesheet" href="style/nav-bar.css">
+    <link rel="stylesheet" href="style/home.css">
+    <link rel="stylesheet" href="style/projects.css">
+    <link rel="stylesheet" href="style/about.css">
+    <link rel="stylesheet" href="style/timeline.css">
+    
+    <title>Document</title>
+
+    <script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
+</head>
+
+<body>
+
+    <div id="app">
+        <header>
+            <input type="checkbox" id="checkbox" value="">
+            <label for="checkbox" id="btn-menu" @click="showMenu()"> <i class="fa fa-bars"></i> </label>
+            
+            <nav role="navigation" id="menu" v-if="seen">
+
+                <ul>
+                    <li><a href="#home" @click.prevent="page = 'home'" @click="showMenu()">INÍCIO</a></li>
+                    <li><a href="#projects" @click.prevent="page = 'projects'" @click="showMenu()">PROJETOS</a></li>
+                    <li><a href="#about" @click.prevent="page = 'about'" @click="showMenu()">SOBRE</a></li>
+                    <li><a href="#timeline" @click.prevent="page = 'timeline'" @click="showMenu()">TIMELINE</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <div id="home" class="container" v-if="page == 'home'">
+            <div id="home-content">
+                <h1>Olá! <br> Eu sou Samuel :)</h1>
+                <p>Estudando e praticando bastante, irei me tornar um programador full-stack.</p>
+            </div>
+    
+            <footer>
+                <a :href="instagramUrl"><img src="images/instagram.png" alt="instagram"></a>
+                <a :href="gmailUrl"><img src="images/gmail.png" alt="gmail"></a>
+                <a :href="githubUrl"><img src="images/github.png" alt="github"></a>
+                <a :href="linkedinUrl"><img src="images/linkedin.png" alt="linkedin"></a>
+                <a :href="whatsappUrl"><img src="images/whatsapp.png" alt="whatsapp"></a>
+            </footer>
+            <p id="lovely-text">Made with <img src="images/heart.png" alt="amor"> and <img src="images/music-note.png" alt="musica"></p>
+        </div>
+    
+        <div id="projects" class="container" v-if="page == 'projects'">
+            <h1>PROJETOS</h1>
+    
+            <div id="projectsDiv" v-for="project in projects">
+                <article>
+                    <h2>{{ project.title }}</h2>
+                    
+                    <div>
+                        <span>{{ project.tecnology }}</span>
+                        <p>{{ project.description }}</p>
+                    </div>
+                    <div class="button">
+                        <a :href="project.codeUrl" id="code">CODE</a>
+                        <a :href="project.demoUrl" id="demo">DEMO</a>
+                    </div>
+                </article>
+            </div>
+        </div>
+    
+        <div id="about" class="container" v-if="page == 'about'">
+            <h1>SOBRE</h1>
+
+            <div id="about-content">
+                <p>Tenho buscado de forma autônoma, conhecimento para melhorar minhas agilidades de programação, noções de interface e organização de código. Tenho experimentado tecnologias bem aceitas pelo mercado, Vue.js e React.js é uma delas. Colocando em prática alguma conhecimentos e adquidindo outros em projetos pessoais.
+                    Trabalhando duro pra me tornar um programador especializado em programação web, tenho muito interesse em front-end. Quero continuar aprendendo, me atualizando das novas tecnologias
+                </p>
+                
+                <article>
+                    <span>Curto tecnologias,
+                        ouvir músicas, 
+                        Dota 2 e seriados 
+                        na Netflix.
+                    </span>
+                </article>
+    
+                <article>
+                    <span>Cursando 
+                        Baharelado em 
+                        Sistemas de 
+                        Informação no IFBA 
+                        campus Feira de 
+                        Santana e estou no 
+                        4º semestre.
+                    </span>
+                </article>
+    
+                <article>
+                    <span>Estou aprendendo 
+                        HTML, CSS, JavaScript, 
+                        Vue.js e React.js.
+                    </span>
+                </article>
+            </div>
+        </div>
+
+        <div id="timeline" class="container" v-if="page == 'timeline'">
+            <h1>TIMELINE</h1>
+
+            <div id="timeline-content">
+                <article>
+                    <p>Aprendendo Vue.js
+                    </p>
+                    <span>
+                        <input type="checkbox" id="like" value="">
+                        <label for="like" id="likeButton"><i class="fa fa-heart"></i></label>
+                    </span>
+                </article>
+            </div>
+        </div>
+    </div>
+    
+    <script src="script/app.js"></script>
+</body>
+</html>

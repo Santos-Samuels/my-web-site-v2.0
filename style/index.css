@@ -1,0 +1,25 @@
+/*------ MOBILE FIRST ------*/
+/*------ GERAL ------*/
+:root {
+    --color-primary: #F4F1ED;
+    --color-secondary: #D97904;
+    --coolor-span: #21475E;
+    --color-background-header: #302B25;
+    --color-background-box: #1E1B16;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+body {
+    font-family: 'Raleway', sans-serif;
+}
+
+/* .container {
+    height: 100vh;
+    width: 100vw;
+} */
