@@ -30,7 +30,7 @@
 }
 
 #timeline article p {
-    width: 95%;
+    width: 100%;
     margin-right: 0.5rem;
     padding-right: 0.5rem;
     border-right: 1px solid silver;
@@ -47,4 +47,16 @@
 
 #timeline article span .liked {
     color: red;
+}
+
+
+@media (min-width: 700px) {
+    #timeline #timeline-content {
+        width: 50%;
+        display: inline-block;
+    }
+
+    #timeline article {
+        margin: 10px;
+    }
 }

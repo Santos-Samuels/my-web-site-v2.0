@@ -41,9 +41,13 @@
         <div id="home" class="container" v-if="page == 'home'">
             <div id="home-content">
                 <h1>Olá! <br> Eu sou Samuel :)</h1>
-                <p>Estudando e praticando bastante, irei me tornar um programador full-stack.</p>
+                <p>Estudando e praticando bastante, irei me tornar um excelente programador front-end.</p>
             </div>
-    
+            
+            <div id="page-landing">
+                <img src="images/page-landing.png" alt="page-landing">
+            </div>
+
             <footer>
                 <a :href="instagramUrl"><img src="images/instagram.png" alt="instagram"></a>
                 <a :href="gmailUrl"><img src="images/gmail.png" alt="gmail"></a>
@@ -57,8 +61,8 @@
         <div id="projects" class="container" v-if="page == 'projects'">
             <h1>PROJETOS</h1>
     
-            <div id="projectsDiv" v-for="project in projects">
-                <article>
+            <div id="projectsDiv">
+                <article v-for="project in projects">
                     <h2>{{ project.title }}</h2>
                     
                     <div>
@@ -81,31 +85,33 @@
                     Trabalhando duro pra me tornar um programador especializado em programação web, tenho muito interesse em front-end. Quero continuar aprendendo, me atualizando das novas tecnologias
                 </p>
                 
-                <article>
-                    <span>Curto tecnologias,
-                        ouvir músicas, 
-                        Dota 2 e seriados 
-                        na Netflix.
-                    </span>
-                </article>
-    
-                <article>
-                    <span>Cursando 
-                        Baharelado em 
-                        Sistemas de 
-                        Informação no IFBA 
-                        campus Feira de 
-                        Santana e estou no 
-                        4º semestre.
-                    </span>
-                </article>
-    
-                <article>
-                    <span>Estou aprendendo 
-                        HTML, CSS, JavaScript, 
-                        Vue.js e React.js.
-                    </span>
-                </article>
+                <div id="infos">
+                    <article>
+                        <span>Curto tecnologias,
+                            ouvir músicas, 
+                            Dota 2 e seriados 
+                            na Netflix.
+                        </span>
+                    </article>
+        
+                    <article>
+                        <span>Cursando 
+                            Baharelado em 
+                            Sistemas de 
+                            Informação no IFBA 
+                            campus Feira de 
+                            Santana e estou no 
+                            4º semestre.
+                        </span>
+                    </article>
+        
+                    <article>
+                        <span>Estou aprendendo 
+                            HTML, CSS, JavaScript, 
+                            Vue.js e React.js.
+                        </span>
+                    </article>
+                </div>
             </div>
         </div>
 

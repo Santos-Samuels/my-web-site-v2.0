@@ -41,8 +41,7 @@ var app = new Vue({
         ],
 
         posts: [
-            { text: 'Aprendendo Vue.js', liked: false },
-            { text: 'teste', liked: true }
+            { text: 'Aprendendo Vue.js', liked: false }
         ]
     },
 

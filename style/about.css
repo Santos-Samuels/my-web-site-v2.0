@@ -33,3 +33,28 @@
 #about article span{
     color: var(--color-primary);
 }
+
+
+@media (min-width: 700px) {
+    #about #about-content p {
+        width: 60%;
+        margin: 50px auto;
+    }
+
+    #about #infos {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        margin-top: 50px;
+    }
+
+    #about article {
+        width: 17%;
+        height: 200px;
+    }
+
+    #about article span {
+        font-size: 1.3rem;
+    }
+}
