@@ -81,8 +81,8 @@
             <h1>SOBRE</h1>
 
             <div id="about-content">
-                <p>Tenho buscado de forma autônoma, conhecimento para melhorar minhas agilidades de programação, noções de interface e organização de código. Tenho experimentado tecnologias bem aceitas pelo mercado, Vue.js e React.js é uma delas. Colocando em prática alguma conhecimentos e adquidindo outros em projetos pessoais.
-                    Trabalhando duro pra me tornar um programador especializado em programação web, tenho muito interesse em front-end. Quero continuar aprendendo, me atualizando das novas tecnologias
+                <p>Tenho buscadO conhecimento para melhorar minhas agilidades de programação, noções de interface e organização de código. Tenho experimentado tecnologias bem aceitas pelo mercado, tais como Vue.js e React.js. Colocando em prática alguns conhecimentos, e aprendendo com os erros.
+                    Trabalhando duro pra me tornar um programador especializado em programação web, tenho muito interesse em front-end. Quero continuar aprendendo, me atualizando sobre as novas tecnologias.
                 </p>
                 
                 <div id="infos">
@@ -118,8 +118,8 @@
         <div id="timeline" class="container" v-if="page == 'timeline'">
             <h1>TIMELINE</h1>
 
-            <div id="timeline-content" v-for="post in posts">
-                <article>
+            <div id="timeline-content">
+                <article v-for="post in posts">
                     <p>{{ post.text }}</p>
                     <span>
                         <input type="checkbox" id="like" value="">

@@ -40,7 +40,6 @@
     border-radius: 5px;
     padding: 3px;
     margin-right: 0.8rem;
-    height: 50px;
 }
 
 #home #lovely-text {
@@ -82,6 +81,7 @@
 
     #home footer a {
         padding: 8px;
+        height: 50px;
     }
 
     #home #lovely-text {

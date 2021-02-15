@@ -5,6 +5,7 @@
     background-position: fixed;
 
     height: 100vh;
+    width: 100vw;
 }
 
 #timeline h1{
@@ -52,11 +53,11 @@
 
 @media (min-width: 700px) {
     #timeline #timeline-content {
-        width: 50%;
-        display: inline-block;
+        display: grid;
+        grid-template-columns: auto auto;
     }
 
     #timeline article {
-        margin: 10px;
+        margin: 10px 30px;
     }
 }

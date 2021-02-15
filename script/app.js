@@ -3,7 +3,7 @@ var app = new Vue({
     data: {
         page: 'home',
         seen: false,
-        instagramUrl: 'https://www.instagram.com/mascarenhassamuuel18',
+        instagramUrl: 'https://www.instagram.com/santossamuelplus',
         gmailUrl: 'mailto:santossamuelplus@gmail.com?subject=Olá, Samuel! Vim pelo site!',
         githubUrl: 'https://github.com/Santos-Samuels',
         linkedinUrl: 'https://www.linkedin.com/in/samuel-santos-0aaa2a1b3',
@@ -13,7 +13,7 @@ var app = new Vue({
             {
                 title: 'Web Site Pessoal v2.0',
                 tecnology: 'HTML e CSS e Vue.js',
-                description: 'Refatoração de Web Site Pessoal, agora com cara nova e utilizando novas tecnologias.',
+                description: 'Remake de Web Site Pessoal, agora com cara nova e utilizando novas tecnologias.',
                 codeUrl: 'https://github.com/Santos-Samuels/my-web-site-v2.0',
                 demoUrl: 'https://my-web-site-v2-0.vercel.app/'
             },
